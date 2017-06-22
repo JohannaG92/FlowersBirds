@@ -13,7 +13,7 @@ html {
     padding: 1px; 
     width: 80%;
     height: 80%; 
-    position: relative; /* or absolute */
+    position: fixed; /* or absolute */
     top: 10%;
     left: 10%;
     opacity: 0.8;
@@ -23,7 +23,38 @@ html {
   position: absolute; 
   bottom: 0; 
   width: 100%;
-  height: 40%
+  height: 30%
+}
+
+#question{
+  position: absolute;
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 20%;
+  top: 5;
+  text-align: center;
+  line-height: 100%;
+  font-size: 8vmin;
+}
+
+#facitContainer{
+  position: absolute;
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 10%;
+  top: 60%;
+  text-align: center;
+  line-height: 100%;
+  font-size: 8vmin;
+}
+
+#imageContainer{
+  position: absolute; 
+  top: 0; 
+  width: 100%;
+  height: 60%
 }
 
 #inputBox{
@@ -42,17 +73,41 @@ html {
 }
 
 #birdImage{
+  position: relative;
   display: block;
   margin: auto;
+  top: 25%;
   max-width: 50%;
   max-height: 50%;
   box-shadow: 0 0 1em 0.25em rgba(0,0,0,0.6);
+}
+
+#birdImage:hover{
+  opacity: 0.6;
 }
 
 #latinname{
   text-align: center;
   font-style: italic;
   padding-top: 1%;
+}
+
+#soundButton {
+    background-color: Transparent;
+    border: none;
+    outline:none;
+    width: 100%;
+    text-align: center;
+    padding-top: 1%;
+    cursor: help;
+    position: relative;
+    opacity: 0;
+}
+
+#soundButton:hover{
+  opacity: 0.6;
+  color: white;
+  font-size: 4em;
 }
 
 #OKButton {
