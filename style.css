@@ -1,0 +1,87 @@
+html { 
+  font-family: 'Patrick Hand SC', cursive;
+  background: url(bgImg2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#container {
+    border-radius: 25px;
+    background: #fff;
+    padding: 1px; 
+    width: 80%;
+    height: 80%; 
+    position: relative; /* or absolute */
+    top: 10%;
+    left: 10%;
+    opacity: 0.8;
+}
+
+#answerContainer{
+  position: absolute; 
+  bottom: 0; 
+  width: 100%;
+  height: 40%
+}
+
+#inputBox{
+  position: absolute;
+  bottom: 40%;
+  display: block;
+  margin: auto;
+  width: 40%;
+  left: 30%;
+  border: none;
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  font-family: 'Patrick Hand SC', cursive;
+  text-align: center;
+  box-shadow: 0 0 1em 0.25em rgba(0,0,0,0.3);
+}
+
+#birdImage{
+  display: block;
+  margin: auto;
+  max-width: 50%;
+  max-height: 50%;
+  box-shadow: 0 0 1em 0.25em rgba(0,0,0,0.6);
+}
+
+#latinname{
+  text-align: center;
+  font-style: italic;
+  padding-top: 1%;
+}
+
+#OKButton {
+  position: absolute;
+  bottom: 40%;
+  display: block;
+  margin: auto;
+  height: 10vw;
+  width: 10vw;
+  right: 18%;
+  border-radius: 100%;
+  border: 0.3vw solid #bbb;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Patrick Hand SC', cursive;
+  background: #fff;
+  color: #555;
+  font-size: 3.5vw;
+  outline: none;
+}
+
+#OKButton:hover{
+  animation: okani 1s linear 0s infinite ;
+}
+
+ @-webkit-keyframes okani 
+{
+  from {box-shadow: 0 0 0 0.5em #ccc}
+  40%{box-shadow: 0 0 0 0.8em #ccc}
+  90%{box-shadow: 0 0 0  0.1em #ccc}
+  to {box-shadow: 0 0 0 0.5em #ccc}
+}
