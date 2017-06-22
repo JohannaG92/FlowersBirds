@@ -2,7 +2,7 @@ var data;
 var bird;
 var rightAnswer;
 
-responsiveVoice.setDefaultVoice("Swedish Female");
+//responsiveVoice.setDefaultVoice("Swedish Female");
 d3.json("https://codepen.io/JohannaG92/pen/owWGxV?editors=0010.js",function(error,jsonData){
   data = jsonData;
   init();
@@ -31,9 +31,9 @@ function getImg(){
 	rightAnswer = rightAnswer.toLowerCase();
 	document.getElementById("pressedId").innerHTML = rightAnswer;
 	document.getElementById("latinName").innerHTML = bird.latinname;
-    var img = document.getElementById("birdImage");
-    img.setAttribute("src", bird.url);
-    //var msg = new SpeechSynthesisUtterance(rightAnswer);
-	//window.speechSynthesis.speak(msg);
-	responsiveVoice.speak(rightAnswer);
+        var img = document.getElementById("birdImage");
+    	img.setAttribute("src", bird.url);
+    	var msg = new SpeechSynthesisUtterance(rightAnswer);
+	window.speechSynthesis.speak(msg);
+	//responsiveVoice.speak(rightAnswer);
 }
